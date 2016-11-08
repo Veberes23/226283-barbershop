@@ -1,9 +1,19 @@
 html,
 body {
   min-width: 1122px;
-  min-height: 1750px;
+  min-height: 1080px;
   margin: 0;
   padding: 0;
+}
+
+@font-face {
+  font-family: ptsans;
+  src: url(../fonts/PTN57F.ttf);
+}
+
+@font-face {
+  font-family: ptsansbold;
+  src: url(../fonts/PTN77F.ttf);
 }
 
 body {
@@ -12,21 +22,23 @@ body {
   font-size: 12px;
   color: black;
   text-transform: uppercase;
-  background: #000000 url("barbershop-index-grid.jpg") no-repeat 50% 3px;
-  background-size: 1122px auto;
+  background: #000 url(../img/tint.png) 1200px 1080px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
-  font-family: ptsans, serif;
+  font-family: ptsansbold, serif;
   line-height: 42px;
   font-size: 30px;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
 
 h2 {
-  font-family: ptsans, serif;
+  font-family: ptsansbold, serif;
   line-height: 27px;
   font-size: 18px;
   color: #fff;
@@ -152,6 +164,7 @@ label {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
+  background-color: #000;
 }
 
 .footer-contacts {
